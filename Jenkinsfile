@@ -16,13 +16,13 @@ stages{
  }
  }
  }
- }
-}
-stage('Compile, Unit Test, Create Java Archive')
+ stage('Compile, Unit Test, Create Java Archive')
 {
  steps{ 
   script{
    bat "mvn -f ${localCodelocation}pom.xml -X -e clean package"
   }
  }
+}
+}
 }
