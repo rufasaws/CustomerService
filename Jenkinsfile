@@ -18,7 +18,7 @@ stages{
  }
  }
 }
-stage('compile,unit test,Create Java Archive')
+stage('Compile, Unit Test, Create Java Archive')
 {
  steps{ 
   script{
