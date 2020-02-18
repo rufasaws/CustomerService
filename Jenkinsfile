@@ -20,7 +20,7 @@ stages{
 {
  steps{ 
   script{
-   "mvn -f ${localcodelocation}pom.xml -X -e clean package"
+   sh "mvn -f ${localcodelocation}pom.xml -X -e clean package"
   }
  }
 }
