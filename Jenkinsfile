@@ -24,13 +24,5 @@ stages{
   }
  }
 }
- stage('continous deployment')
- {
-  steps{
-   script{
-    sh label: '', script: 'scp /var/lib/jenkins/workspace/CustomerService/source/customer-service/target ubuntu@172.31.88.218:/var/lib/tomcat8/webapps/testapp.war'
-   }
-  }
-}
 }
 }
