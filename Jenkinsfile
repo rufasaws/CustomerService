@@ -28,7 +28,7 @@ stages{
  {
  steps{
   script{
-   sh "scp /var/lib/jenkins/workspace/CustomerService/source/customer-service/target/CustomerService.jar 3.92.133.137:8080/usr/local/tomcat/webapps/Testapp.jar"
+   sh 'scp /var/lib/jenkins/workspace/CustomerService/source/customer-service/target/CustomerService.jar ubuntu@172.31.88.218:/var/lib/tomcat8/webapps/testapp.war'
 }
 }
  }
