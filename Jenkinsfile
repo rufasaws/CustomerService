@@ -28,8 +28,8 @@ stages{
  {
  steps{
   script{
-   sh 'scp /var/lib/jenkins/workspace/CustomerService/source/customer-service/target/CustomerService.jar ubuntu@172.31.88.218:/var/lib/tomcat8/webapps/testapp.war'
-}
+sh label: '', script: '''scp /var/lib/jenkins/workspace/CustomerService/source/customer-service/target/CustomerService.jar ubuntu@172.31.88.218:/var/lib/tomcat8/webapps/testapp.war
+'''}
 }
  }
 }
