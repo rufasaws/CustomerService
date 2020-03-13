@@ -24,5 +24,13 @@ stages{
   }
  }
 }
+ stage('deployment')
+ {
+  steps{
+   script{
+    sh "scp /var/lib/jenkins/workspace/CustomerService/source/customer-service/target/customer-service.jar customer@172.17.0.2:/usr/local/tomcat/webapps/customer.jar"
+   }
+  }
+ }
 }
 }
